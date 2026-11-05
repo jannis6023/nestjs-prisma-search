@@ -1,0 +1,63 @@
+{
+  "name": "nestjs-prisma-search",
+  "version": "0.1.0",
+  "description": "Typed, validated and OpenAPI-documented search endpoints for NestJS + Prisma: field filters with AND/OR/NOT, sorting, free-text search and paging from one declaration.",
+  "keywords": [
+    "nestjs",
+    "prisma",
+    "search",
+    "filter",
+    "pagination",
+    "openapi",
+    "swagger",
+    "class-validator"
+  ],
+  "license": "MIT",
+  "author": "jannis6023",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jannis6023/nestjs-prisma-search.git"
+  },
+  "bugs": "https://github.com/jannis6023/nestjs-prisma-search/issues",
+  "homepage": "https://github.com/jannis6023/nestjs-prisma-search#readme",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "jest",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^11.0.0",
+    "@nestjs/swagger": "^11.0.0",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.0",
+    "reflect-metadata": "^0.2.0"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^11.0.1",
+    "@nestjs/core": "^11.0.1",
+    "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.2.0",
+    "@nestjs/testing": "^11.0.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.2",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.14.2",
+    "jest": "^30.0.0",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "supertest": "^7.0.0",
+    "ts-jest": "^29.2.5",
+    "typescript": "^5.7.3"
+  }
+}
