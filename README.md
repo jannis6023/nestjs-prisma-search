@@ -142,6 +142,17 @@ Built-in guards keep requests cheap: `AND` / `OR` / `NOT` nesting depth 6, at mo
 
 `@SearchBody()` reads the raw body and validates it with its own strict pipe (`whitelist`, `forbidNonWhitelisted`, `forbidUnknownValues`). A global `ValidationPipe` with `whitelist: true` therefore cannot strip an unknown condition before it is rejected: a stripped condition would silently widen the result set.
 
+## Releasing
+
+Releases are published from GitHub Actions through npm trusted publishing, with a provenance attestation for every version.
+
+```bash
+npm version 0.2.0        # or minor / patch / 0.3.0-beta.1; commits and creates tag v0.2.0
+git push --follow-tags
+```
+
+The tag starts [`publish.yml`](.github/workflows/publish.yml), which checks that the tag matches `package.json`, runs typecheck, tests and build, and publishes. Prerelease versions go to the `next` dist-tag.
+
 ## License
 
 [MIT](LICENSE)
