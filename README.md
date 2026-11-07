@@ -17,7 +17,7 @@ Works with any Prisma model and database. Prisma is not a dependency: the librar
 npm install nestjs-prisma-search
 ```
 
-Peer dependencies: `@nestjs/common` 11, `@nestjs/swagger` 11, `class-validator` 0.14, `class-transformer` 0.5, `reflect-metadata`.
+Peer dependencies: `@nestjs/common` 11, `@nestjs/swagger` 11, `class-validator` 0.14 or 0.15, `class-transformer` 0.5, `reflect-metadata`.
 
 ## Usage
 

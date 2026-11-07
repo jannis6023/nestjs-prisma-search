@@ -1,6 +1,6 @@
 {
   "name": "nestjs-prisma-search",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Typed, validated and OpenAPI-documented search endpoints for NestJS + Prisma: field filters with AND/OR/NOT, sorting, free-text search and paging from one declaration.",
   "keywords": [
     "nestjs",
@@ -39,7 +39,7 @@
     "@nestjs/common": "^11.0.0",
     "@nestjs/swagger": "^11.0.0",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.0",
+    "class-validator": "^0.14.0 || ^0.15.0",
     "reflect-metadata": "^0.2.0"
   },
   "devDependencies": {
@@ -52,7 +52,7 @@
     "@types/node": "^22.0.0",
     "@types/supertest": "^6.0.2",
     "class-transformer": "^0.5.1",
-    "class-validator": "^0.14.2",
+    "class-validator": "^0.15.1",
     "jest": "^30.0.0",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
