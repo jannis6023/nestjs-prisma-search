@@ -11,3 +11,7 @@ updates:
     groups:
       dev-dependencies:
         dependency-type: development
+    ignore:
+      # ts-jest 29 requires typescript <7; lift once ts-jest supports 7.
+      - dependency-name: typescript
+        update-types: ['version-update:semver-major']
